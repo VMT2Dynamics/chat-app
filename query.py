@@ -1,7 +1,5 @@
-__import__('pysqlite3')
 import sys
 import streamlit as st
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from langchain.chains import create_retrieval_chain, create_history_aware_retriever
 from langchain_community.document_loaders import TextLoader
 from langchain_community.chat_models import ChatOpenAI
