@@ -22,7 +22,7 @@ load_dotenv()
 # https://python.langchain.com/v0.1/docs/use_cases/question_answering/chat_history/#chain-with-chat-history
 
 
-llm = ChatOpenAI(api_key=st.secrets["openai_api_key"])
+llm = ChatOpenAI(model="gpt-4.1-mini",api_key=st.secrets["openai_api_key"])
 chat_history = []
 
 
